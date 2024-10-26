@@ -1,5 +1,5 @@
+import './TextArea.css'
 import { ChangeEvent, useId, useState } from 'react'
-import './Textarea.css'
 
 type areaProps = {
   text?: string
@@ -7,6 +7,7 @@ type areaProps = {
 
 function TextArea({ text = 'hello' }: areaProps) {
   const [areaText, setAreaText] = useState<string | undefined>(text)
+
   const id = useId()
   const textareaId = `textarea-${id}`
 
@@ -16,7 +17,7 @@ function TextArea({ text = 'hello' }: areaProps) {
 
   return (
     <div className='textarea-box'>
-      <div className='wrapper'>
+      <div className='textarea-wrapper'>
         <textarea
           name='text-info'
           id={textareaId}
