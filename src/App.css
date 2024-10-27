@@ -1,1 +1,33 @@
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+.content {
+  width: 100%;
+  background-color: var(--grey-darkest);
+}
+
+.content__wrapper {
+  width: auto;
+  height: 100%;
+  /* max-width: 1280px; */
+  position: relative;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: 100%;
+  /* max-width: 800px; */
+  aspect-ratio: auto 1.55 / 1;
+  background-color: var(--secondary);
+}
